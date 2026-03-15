@@ -17,11 +17,11 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v6
 
-      - name: Configure AWS credentials
-        uses: aws-actions/configure-aws-credentials@v4
-        with:
-          role-to-assume: arn:aws:iam::850756192530:role/testrole
-          aws-region: us-east-1
+      # - name: Configure AWS credentials
+      #   uses: aws-actions/configure-aws-credentials@v6
+      #   with:
+      #     role-to-assume: arn:aws:iam::123456789012:role/GitHubActionsRole
+      #     aws-region: us-east-1
 
       - name: List S3 buckets
         run: |
